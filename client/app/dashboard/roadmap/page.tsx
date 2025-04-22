@@ -134,7 +134,7 @@ export default function RoadmapPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="border-b">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="px-10 tainer flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-semibold">
             <Link href="/dashboard">
               <span className="text-xl">CareerPath</span>
@@ -156,7 +156,7 @@ export default function RoadmapPage() {
         </div>
       </header>
       <main className="flex-1">
-        <div className="container py-6">
+        <div className="px-10 py-6">
           <div className="mb-6 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Link href="/dashboard">
@@ -287,7 +287,7 @@ export default function RoadmapPage() {
         </div>
       </main>
       <footer className="border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="px-10 flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} CareerPath. All rights reserved.
           </p>

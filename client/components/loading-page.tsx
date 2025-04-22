@@ -14,7 +14,7 @@ export default function LoadingPage() {
         }
         return prevProgress + 1
       })
-    }, 30)
+    }, 60)
 
     return () => clearInterval(interval)
   }, [])

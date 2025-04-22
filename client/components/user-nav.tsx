@@ -19,7 +19,9 @@ export function UserNav() {
 
   const handleLogout = () => {
     // In a real app, this would call an API to log the user out
+    localStorage.clear()
     router.push("/")
+
   }
 
   return (
@@ -33,16 +35,16 @@ export function UserNav() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="end" forceMount>
-        <DropdownMenuLabel className="font-normal">
+        {/* <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-1">
             <p className="text-sm font-medium leading-none">John Doe</p>
             <p className="text-xs leading-none text-muted-foreground">john.doe@example.com</p>
           </div>
-        </DropdownMenuLabel>
-        <DropdownMenuSeparator />
+        </DropdownMenuLabel> */}
+        {/* <DropdownMenuSeparator />  */}
         <DropdownMenuGroup>
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Settings</DropdownMenuItem>
+          {/* <DropdownMenuItem>Profile</DropdownMenuItem>
+          <DropdownMenuItem>Settings</DropdownMenuItem> */}
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={handleLogout}>Log out</DropdownMenuItem>
